@@ -1,0 +1,30 @@
+{
+  "name": "proyecto3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "cucumber-js --config cucumber.js",
+  "test:formulario": "cucumber-js --config cucumber.js --tags @formulario",
+  "test:carrito": "cucumber-js --config cucumber.js --tags @carrito",
+  "test:login": "cucumber-js --config cucumber.js --tags @login",
+  "test:completarcompra": "cucumber-js --config cucumber.js --tags @completarcompra",
+  "report": "node generate-report.js",
+  "test:formulario:report": "npm run test:formulario && npm run report",
+  "test:carrito:report": "npm run test:carrito && npm run report",
+  "test:login:report": "npm run test:login && npm run report",
+  "test:completarcompra:report": "npm run test:completarcompra && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "multiple-cucumber-html-reporter": "^3.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}

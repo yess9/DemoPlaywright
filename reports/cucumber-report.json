@@ -1,0 +1,201 @@
+[
+  {
+    "description": "  Como un cliente de Demo Site Guru99,\n  Quiero poder seleccionar, agregar productos al carrito y completar una compra,\n  Para poder adquirir el producto que necesito de manera facil y segura.",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-de-producto-mother-elephant-en-demo-site-guru99;completar-el-proceso-de-compra",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Completar el proceso de compra",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 603347400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "ingreso a la página de Elephant",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2257576200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "se abre y se cierra el pop-up de cookies",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 556552900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "capturo los datos de la tarjeta",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133185800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "regreso al home",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30481399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "agrego un producto al carrito de compras",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78816600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "doy click en comprar",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 376305599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "ingreso los datos de la tarjeta",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264906999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "visualizo un mensaje de compra exitosa y numero de orden",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555449899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "regreso al home de Elephant",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 662599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "doy click en estado de compra",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 343692800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "ingreso los datos de  la tarjeta para comprar",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 578209600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "puedo validar los datos de la tarjeta y el estado de la compra",
+            "match": {
+              "location": "tests\\steps\\Elephant\\homeelephant.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83623599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 438474799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@completarcompra",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-de-producto-mother-elephant-en-demo-site-guru99",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Compra de producto mother elephant en Demo Site Guru99",
+    "tags": [],
+    "uri": "tests\\features\\Elephant\\elephant.feature"
+  }
+]
