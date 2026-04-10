@@ -19,8 +19,7 @@ export class ClicksPage{
     async CargarDocumento(){
         const fileInput = this.page.locator('#picture');
 
-        await fileInput.setInputFiles({name: 'test.png', mimeType: 'image/png', buffer: Buffer.from('')});
-      
+        await fileInput.setInputFiles({name: 'test.png', mimeType: 'image/png', buffer: Buffer.from('archivo de prueba')});
     }
 
 
