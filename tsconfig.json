@@ -4,6 +4,7 @@
     "module": "commonjs",
     "lib": ["ES2017", "DOM"],
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "types": ["node"]
   }
 }

@@ -17,9 +17,14 @@ export class ClicksPage{
         await radio.click();
     }
     async CargarDocumento(){
-        const fileInput = this.page.locator('#picture');
-        await fileInput.waitFor({state: 'visible'})
-        await fileInput.setInputFiles ('/Users/Yessica/Pictures/image.png');
+          const fileInput = this.page.locator('#picture');
+
+         await fileInput.waitFor({ state: 'attached' });
+
+          const filePath = path.resolve('tests/fixtures/test.png');
+
+          await fileInput.setInputFiles(filePath);
+      
     }
 
 
