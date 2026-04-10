@@ -20,7 +20,13 @@ jobs:
 
     - name: Run Cucumber tests
       run: npx cucumber-js --config cucumber.js
+    
 
+    - name: Generate HTML report
+      run: node generate-report.js
+
+    - name: Verify report generation
+      run: ls -la reports/html-report
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
