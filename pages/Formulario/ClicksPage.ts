@@ -17,13 +17,9 @@ export class ClicksPage{
         await radio.click();
     }
     async CargarDocumento(){
-          const fileInput = this.page.locator('#picture');
+        const fileInput = this.page.locator('#picture');
 
-         await fileInput.waitFor({ state: 'attached' });
-
-          const filePath = path.resolve('tests/fixtures/test.png');
-
-          await fileInput.setInputFiles(filePath);
+        await fileInput.setInputFiles({name: 'test.png', mimeType: 'image/png', buffer: Buffer.from('')});
       
     }
 
