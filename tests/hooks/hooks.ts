@@ -1,14 +1,13 @@
 import { Before, After } from '@cucumber/cucumber';
 import '../../utils/world'; // Asegúrate de que el CustomWorld se registre correctamente
-import { CustomWorld } from '../../utils/world';
+import { setDefaultTimeout } from '@cucumber/cucumber';
 
-// hooks.ts — ejecuta PRIMERO
-Before(async function (this: CustomWorld) {
+setDefaultTimeout(60 * 1000); // 60 segundos
+
+Before(async function () {
   await this.init();
 });
 
-After(async function (this: CustomWorld) {
-  try {
-    await this.close();
-  } catch (e) {}
+After(async function () {
+  await this.close();
 });
