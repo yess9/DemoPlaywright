@@ -7,7 +7,7 @@ Feature: Compra de producto mother elephant en Demo Site Guru99
     Given ingreso a la página de Elephant 
 
   @completarcompra 
-  Scenario: Realizar compra
+  Scenario: Mi primera compra
     When se abre y se cierra el pop-up de cookies
     And capturo los datos de la tarjeta
     And regreso al home
